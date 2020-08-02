@@ -11,8 +11,14 @@
 <body>
     <div class="page">
 
-        <header class="header wow fadeInDown ">
-
+        <header class="header wow fadeInDown " id="1">
+            
+                <nav class="nav-menu d-flex align-items-center justify-content-center">
+                    <ul class="nav-item"> <a href="#1" class="nav-link">Header</a></ul>
+                    <ul class="nav-item"> <a href="#2" class="nav-link">Main</a></ul>
+                    <ul class="nav-item"> <a href="#3" class="nav-link">Footer</a></ul>
+                </nav>
+        
                   <div class="leftside ">
 
                   </div>
@@ -36,7 +42,7 @@
 
         </header>
 
-        <main class="main">
+        <main class="main" id="2">
             <div class="content">
             <section class="section-first">
                
@@ -80,7 +86,7 @@
             
         </main>
 
-        <footer class="footer ">
+        <footer class="footer" id="3">
             <div class="leftside wow bounceIn ">
                 <h1 class="leftside__title">This Webpage Is <span class="fat-text">Designed By</span> </h1>
                 <picture>
@@ -117,6 +123,7 @@
     </div>
 
     <script src="./js/wow.min.js"></script>
+    <script src="./js/main.js"></script>
     <script>
         new WOW().init();
     </script>

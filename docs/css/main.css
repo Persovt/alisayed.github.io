@@ -19,6 +19,7 @@ textarea::placeholder {
 .header {
   min-height: 100vh;
   width: 100vw;
+  position: relative;
   display: grid;
   grid-template-columns: 1fr auto; }
   .header .leftside {
@@ -236,7 +237,8 @@ button:focus {
 
 @media (max-width: 768px) {
   .header {
-    display: flex !important; }
+    display: flex !important;
+    flex-direction: column-reverse; }
 
   .section-first {
     flex-direction: column; }
@@ -254,3 +256,20 @@ button:focus {
     flex-direction: column; }
     .sayhello .rightside__name, .sayhello .rightside__email {
       width: 100%; } }
+.active {
+  top: 0 !important; }
+
+.nav-menu {
+  transition: top 1s;
+  display: none;
+  height: 100vh;
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  top: -100%;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.9); }
+  .nav-menu .nav-item {
+    padding: 0; }
+  .nav-menu .nav-link, .nav-menu .nav-link:hover {
+    color: white; }
