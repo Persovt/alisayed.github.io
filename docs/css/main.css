@@ -305,6 +305,8 @@ button:focus {
   width: 10px;
   height: 4px;
   border-radius: 10px;
-  top: 10;
   left: 44%;
   box-shadow: 0 0 10px white; }
+
+.nav-item:last-child::after {
+  display: none; }
