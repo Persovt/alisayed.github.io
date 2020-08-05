@@ -353,9 +353,11 @@ top: 0;
 
 .active{
     top:0 !important;
+    position: fixed !important;
 
 }
 .nav-menu{
+    z-index: 100;
     transition: top 1s;
     display: none;
     height: 100vh;
@@ -376,16 +378,16 @@ top: 0;
     }
     background-color: rgba($color: #000000, $alpha: 0.9);
 }
-.burger.active span{        
-    display: none;
+.burger.active-burger span{        
+    visibility: hidden;
   }
  
-  .burger.active:before{
+  .burger.active-burger:before{
       transform: rotate(45deg);
     background-color: white;
     box-shadow: 0 0 10px white;
   }
-  .burger.active:after{
+  .burger.active-burger:after{
       transform: rotate(-45deg);
       bottom: 27px;
       background-color: white;
@@ -397,7 +399,10 @@ top: 0;
         width: 100%;
         left: 0;
     }
-    
+    .is-scroll{
+        overflow: hidden;
+        position: fixed;
+     }
     .header{
         display: flex !important;
         flex-direction: column-reverse;
